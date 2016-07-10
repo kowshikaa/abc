@@ -1,25 +1,21 @@
 # abc
 #include<stdio.h>
 #include<conio.h>
-int main()
+void main()
 {
-int a,n,c,j,i;
-printf("Enter a value:");
+int a,n,i,j;
+int b=0;
+printf("\n Enter value=");
 scanf("%d",&a);
-printf("Enter the n value");
-scanf("%d",&n);
-printf("Enter the pair:");
-scanf("%d",&c);
-for(j=0;j<2*c;j++);
+n=2*a;
+for(i=1;i<n;i++)
 {
-for(i=1;i=2*n-a;i++)
-if(c!=i)
+for(j=i+1;j<=n;j++)
 {
-printf("Enter the pair",c);
-printf("Enter the for day",i++,c);
+printf("(%d,%d)\n",i,j);
+b++;
 }
 }
-printf("Enter the calculation",a);
-
-return 0;
+printf("No of paires =%d",b);
+getch();
 }
